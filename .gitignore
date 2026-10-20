@@ -1,0 +1,12 @@
+node_modules/
+.pnpm-store/
+交付/
+笔记整理/.vitepress/cache/
+笔记整理/.vitepress/dist/
+笔记整理/原图/
+*.pdf
+.work/
+__pycache__/
+*.log
+笔记整理/.vitepress/.temp/
+笔记整理/public/

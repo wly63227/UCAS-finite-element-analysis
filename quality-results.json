@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "knowledge": 99,
+  "classroomRecords": 24,
+  "notes": [
+    "21 HTML pages; 876 statically rendered math expressions; 959 local link/resource references checked"
+  ],
+  "failures": []
+}

@@ -1,0 +1,245 @@
+[
+  {
+    "source": "S01",
+    "page": 1,
+    "topic": "课程地图与热传导模型",
+    "chapters": [
+      "01"
+    ],
+    "status": "已视觉核对并整理",
+    "note": ""
+  },
+  {
+    "source": "S01",
+    "page": 2,
+    "topic": "守恒、三类边界、Taylor 与差分",
+    "chapters": [
+      "02"
+    ],
+    "status": "已视觉核对并整理",
+    "note": ""
+  },
+  {
+    "source": "S01",
+    "page": 3,
+    "topic": "二维变系数差分、边界与矩阵",
+    "chapters": [
+      "03"
+    ],
+    "status": "已视觉核对并整理",
+    "note": ""
+  },
+  {
+    "source": "S01",
+    "page": 4,
+    "topic": "杆件平衡、连续模型、加权余量",
+    "chapters": [
+      "04"
+    ],
+    "status": "已视觉核对并整理",
+    "note": ""
+  },
+  {
+    "source": "S01",
+    "page": 5,
+    "topic": "分部积分、弱形式、线性插值",
+    "chapters": [
+      "04",
+      "05"
+    ],
+    "status": "已视觉核对并整理",
+    "note": ""
+  },
+  {
+    "source": "S01",
+    "page": 6,
+    "topic": "单元分析、刚度、载荷、装配",
+    "chapters": [
+      "05"
+    ],
+    "status": "已视觉核对并整理",
+    "note": ""
+  },
+  {
+    "source": "S01",
+    "page": 7,
+    "topic": "求解后处理、条件数、二次插值",
+    "chapters": [
+      "05"
+    ],
+    "status": "已视觉核对并整理",
+    "note": ""
+  },
+  {
+    "source": "S01",
+    "page": 8,
+    "topic": "二次元续、一维一般 ODE 弱形式",
+    "chapters": [
+      "05",
+      "06"
+    ],
+    "status": "已视觉核对并整理",
+    "note": ""
+  },
+  {
+    "source": "S01",
+    "page": 9,
+    "topic": "一般 ODE 单元矩阵与 Robin",
+    "chapters": [
+      "06"
+    ],
+    "status": "已视觉核对并整理",
+    "note": ""
+  },
+  {
+    "source": "S01",
+    "page": 10,
+    "topic": "二维 Poisson、Gauss/Green 推导",
+    "chapters": [
+      "06"
+    ],
+    "status": "已视觉核对并整理",
+    "note": ""
+  },
+  {
+    "source": "S01",
+    "page": 11,
+    "topic": "二维弱形式、node/elem、双线性插值",
+    "chapters": [
+      "06"
+    ],
+    "status": "已视觉核对并整理",
+    "note": ""
+  },
+  {
+    "source": "S01",
+    "page": 12,
+    "topic": "Q4 梯度与积分照片，无文本层",
+    "chapters": [
+      "06"
+    ],
+    "status": "已视觉核对并整理",
+    "note": ""
+  },
+  {
+    "source": "S01",
+    "page": 13,
+    "topic": "二维刚度、数值积分、边界矩阵与域载荷",
+    "chapters": [
+      "08"
+    ],
+    "status": "已视觉核对并整理",
+    "note": ""
+  },
+  {
+    "source": "S01",
+    "page": 14,
+    "topic": "边载荷、总体装配",
+    "chapters": [
+      "08"
+    ],
+    "status": "已视觉核对并整理",
+    "note": ""
+  },
+  {
+    "source": "S01",
+    "page": 15,
+    "topic": "九节点双二次元、维度",
+    "chapters": [
+      "08"
+    ],
+    "status": "已视觉核对并整理",
+    "note": "仅保留数学内容；个人“考试”批注不能证实考核安排"
+  },
+  {
+    "source": "C01",
+    "page": 1,
+    "topic": "形函数行列式与面积比",
+    "chapters": [
+      "09"
+    ],
+    "status": "已视觉核对并整理",
+    "note": "同一推导的不同拍摄角度，合并讲解"
+  },
+  {
+    "source": "C02",
+    "page": 1,
+    "topic": "插值系数行列式",
+    "chapters": [
+      "09"
+    ],
+    "status": "已视觉核对并整理",
+    "note": "同一推导的不同拍摄角度，合并讲解"
+  },
+  {
+    "source": "C03",
+    "page": 1,
+    "topic": "一次/二次多项式、节点示意",
+    "chapters": [
+      "09"
+    ],
+    "status": "已视觉核对并整理",
+    "note": "人物遮挡或边缘模糊处不猜测逐字内容"
+  },
+  {
+    "source": "C04",
+    "page": 1,
+    "topic": "二维弱形式的重复角度",
+    "chapters": [
+      "06"
+    ],
+    "status": "已视觉核对并整理",
+    "note": "人物遮挡或边缘模糊处不猜测逐字内容"
+  },
+  {
+    "source": "C05",
+    "page": 1,
+    "topic": "弱形式与面积坐标概览",
+    "chapters": [
+      "06",
+      "09"
+    ],
+    "status": "已视觉核对并整理",
+    "note": "人物遮挡或边缘模糊处不猜测逐字内容"
+  },
+  {
+    "source": "C06",
+    "page": 1,
+    "topic": "三角插值完整板书远景",
+    "chapters": [
+      "09"
+    ],
+    "status": "已视觉核对并整理",
+    "note": "同一推导的不同拍摄角度，合并讲解"
+  },
+  {
+    "source": "C07",
+    "page": 1,
+    "topic": "面积比、单位分解与节点性质",
+    "chapters": [
+      "09"
+    ],
+    "status": "已视觉核对并整理",
+    "note": "同一推导的不同拍摄角度，合并讲解"
+  },
+  {
+    "source": "C08",
+    "page": 1,
+    "topic": "界面两侧法向通量抵消",
+    "chapters": [
+      "10"
+    ],
+    "status": "已视觉核对并整理",
+    "note": "人物遮挡或边缘模糊处不猜测逐字内容"
+  },
+  {
+    "source": "C09",
+    "page": 1,
+    "topic": "分区方程、材料界面与分部积分",
+    "chapters": [
+      "10"
+    ],
+    "status": "已视觉核对并整理",
+    "note": "人物遮挡或边缘模糊处不猜测逐字内容"
+  }
+]

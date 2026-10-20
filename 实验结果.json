@@ -1,0 +1,61 @@
+{
+  "checks": [
+    "FDM source and nonzero Dirichlet sign",
+    "Dirichlet lifting with two nonzero end values",
+    "Pure Neumann has constant nullspace",
+    "Q4 closed matrix versus numerical integration",
+    "Q4 eigenvalues",
+    "Q4 consistent source",
+    "Quadratic rod matrix",
+    "Q9 tensor partition -1",
+    "Q9 tensor partition -0.2",
+    "Q9 tensor partition 0",
+    "Q9 tensor partition 0.4",
+    "Q9 tensor partition 1",
+    "Triangle matrix from independent nodal inversion",
+    "Triangle nodal Kronecker property",
+    "Triangle barycentric example",
+    "Triangle linear patch gradient",
+    "Triangle energy versus analytic gradient energy",
+    "Nonsymmetric Jacobian gradient chain rule",
+    "Invalid element orientation detected",
+    "Interface exact nodal values",
+    "Interface mathematical flux continuity",
+    "L2 observed convergence order",
+    "H1_seminorm observed convergence order",
+    "FDM_max observed convergence order"
+  ],
+  "passed": 24,
+  "convergence": [
+    {
+      "n": 4,
+      "h": 0.25,
+      "L2": 0.03928434776896045,
+      "H1_seminorm": 0.49850847488192407,
+      "FDM_max": 0.053029287545514725
+    },
+    {
+      "n": 8,
+      "h": 0.125,
+      "L2": 0.009920919911479881,
+      "H1_seminorm": 0.2511817693763449,
+      "FDM_max": 0.012950746721879458
+    },
+    {
+      "n": 16,
+      "h": 0.0625,
+      "L2": 0.002486501339423539,
+      "H1_seminorm": 0.1258331584745224,
+      "FDM_max": 0.003218964440079519
+    },
+    {
+      "n": 32,
+      "h": 0.03125,
+      "L2": 0.0006220177931453257,
+      "H1_seminorm": 0.06294690520026244,
+      "FDM_max": 0.0008035776793697824
+    }
+  ],
+  "randomness": "none",
+  "model": "-u''=pi^2 sin(pi*x), u(0)=u(1)=0"
+}

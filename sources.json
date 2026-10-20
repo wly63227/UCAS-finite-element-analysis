@@ -1,0 +1,345 @@
+[
+  {
+    "path": "Calculus-4-Ed.pdf",
+    "bytes": 6678504,
+    "sha256": "c57e1524821333bf43e213684a705dbb511e8c1602e6983976a826872c103ace",
+    "pages": 790,
+    "text_pages": 789,
+    "review": "哈希/页数/提取状态已盘点；未全书视觉审阅",
+    "id": "R01",
+    "role": "参考书；非课堂覆盖对象",
+    "duplicateOf": null
+  },
+  {
+    "path": "Calculus-for-Engineers-4th-Edition-1(1).pdf",
+    "bytes": 27527145,
+    "sha256": "073cfb60502d9c062ad0be81ae02003a8d090edb39a5ed625b72330f855e2dcb",
+    "pages": 1216,
+    "text_pages": 1211,
+    "review": "哈希/页数/提取状态已盘点；未全书视觉审阅",
+    "id": "R02",
+    "role": "参考书；非课堂覆盖对象",
+    "duplicateOf": null
+  },
+  {
+    "path": "FVM-Witch-OpenFOAM-Matlab(1).pdf",
+    "bytes": 25945642,
+    "sha256": "cc3aae4fff7356655ee2e0f7d0f843ec056c4d2eb785f0a02f659f9434c93ef3",
+    "pages": 817,
+    "text_pages": 794,
+    "review": "哈希/页数/提取状态已盘点；未全书视觉审阅",
+    "id": "R03",
+    "role": "参考书；非课堂覆盖对象",
+    "duplicateOf": null
+  },
+  {
+    "path": "linear-algebra-9781107177901-1107177901-compress.pdf",
+    "bytes": 185585929,
+    "sha256": "bc758d6043149140c1a537d09a5957ab53048794dbb5e8a5c75ef5c267410886",
+    "pages": 448,
+    "text_pages": 442,
+    "review": "哈希/页数/提取状态已盘点；未全书视觉审阅",
+    "id": "R04",
+    "role": "参考书；非课堂覆盖对象",
+    "duplicateOf": null
+  },
+  {
+    "path": "Linear-Algebra-Pure-Applied-PDFDrive-com(1).pdf",
+    "bytes": 25002415,
+    "sha256": "2593e0b9bc233b2f29bd50a3440faf3bd4cc9a8c7d8e5ad936a0bd6c0e43a12a",
+    "pages": 734,
+    "text_pages": 721,
+    "review": "哈希/页数/提取状态已盘点；未全书视觉审阅",
+    "id": "R05",
+    "role": "参考书；非课堂覆盖对象",
+    "duplicateOf": null
+  },
+  {
+    "path": "Numerical-Analysis-Book49.pdf",
+    "bytes": 15231115,
+    "sha256": "19297ae3812f99b41d01c2bb8de62e2c57fd88cb88a5e888216f14ac652b5c4c",
+    "pages": 895,
+    "text_pages": 874,
+    "review": "哈希/页数/提取状态已盘点；未全书视觉审阅",
+    "id": "R06",
+    "role": "参考书；非课堂覆盖对象",
+    "duplicateOf": null
+  },
+  {
+    "path": "Numerical-methods(1).pdf",
+    "bytes": 36196961,
+    "sha256": "4c53961078785679c395e24eb96d48336e3379172465affb8f82af49e4a8c1a5",
+    "pages": 825,
+    "text_pages": 0,
+    "review": "哈希/页数/提取状态已盘点；未全书视觉审阅",
+    "id": "R07",
+    "role": "参考书；非课堂覆盖对象",
+    "duplicateOf": null
+  },
+  {
+    "path": "《数值分析》（第五版）李庆扬，清华大学出.pdf",
+    "bytes": 36236772,
+    "sha256": "296220db52f15b91b6df78890250beb7d7e0c3f8e6a6118a82507dfbf5708684",
+    "pages": 341,
+    "text_pages": 0,
+    "review": "哈希/页数/提取状态已盘点；未全书视觉审阅",
+    "id": "R08",
+    "role": "参考书；非课堂覆盖对象",
+    "duplicateOf": "《数值分析》（第五版）李庆扬，清华大学出版社.pdf(1).pdf"
+  },
+  {
+    "path": "《数值分析》（第五版）李庆扬，清华大学出版社.pdf(1).pdf",
+    "bytes": 36236772,
+    "sha256": "296220db52f15b91b6df78890250beb7d7e0c3f8e6a6118a82507dfbf5708684",
+    "pages": 341,
+    "text_pages": 0,
+    "review": "哈希/页数/提取状态已盘点；未全书视觉审阅",
+    "id": "R09",
+    "role": "参考书；非课堂覆盖对象",
+    "duplicateOf": "《数值分析》（第五版）李庆扬，清华大学出.pdf"
+  },
+  {
+    "path": "姜礼尚书-1.pdf",
+    "bytes": 2355495,
+    "sha256": "bfc458fc8b14e787e86778ae05e4fe56c2f056adbf1b63538e72450c1f2ecbe4",
+    "pages": 33,
+    "text_pages": 0,
+    "review": "哈希/页数/提取状态已盘点；未全书视觉审阅",
+    "id": "R10",
+    "role": "参考书；非课堂覆盖对象",
+    "duplicateOf": null
+  },
+  {
+    "path": "姜礼尚书-2.pdf",
+    "bytes": 11530627,
+    "sha256": "2559e2961641e858d035443554ae211fbd03bdaac92d7a7cb3448d91bc00a05f",
+    "pages": 153,
+    "text_pages": 0,
+    "review": "哈希/页数/提取状态已盘点；未全书视觉审阅",
+    "id": "R11",
+    "role": "参考书；非课堂覆盖对象",
+    "duplicateOf": null
+  },
+  {
+    "path": "有限元分析(1).pdf",
+    "bytes": 70264990,
+    "sha256": "85f8e3c9c668ae9560d00cda60e2e486f0d02979b383cc9fea085002ae8edd2a",
+    "pages": 15,
+    "text_pages": 11,
+    "review": "2026-10-20 视觉核对",
+    "id": "S01",
+    "role": "课堂主资料",
+    "duplicateOf": null
+  },
+  {
+    "path": "科学计算中偏微分方程有限差分方法(1).pdf",
+    "bytes": 23269000,
+    "sha256": "6979b5fa3acd1b4b40ee8f9497ac8ab75ee53e5ab38ff0a9d02d76dfabef45a9",
+    "pages": 390,
+    "text_pages": 0,
+    "review": "哈希/页数/提取状态已盘点；未全书视觉审阅",
+    "id": "R12",
+    "role": "参考书；非课堂覆盖对象",
+    "duplicateOf": "科学计算中偏微分方程有限差分方法.pdf"
+  },
+  {
+    "path": "科学计算中偏微分方程有限差分方法.pdf",
+    "bytes": 23269000,
+    "sha256": "6979b5fa3acd1b4b40ee8f9497ac8ab75ee53e5ab38ff0a9d02d76dfabef45a9",
+    "pages": 390,
+    "text_pages": 0,
+    "review": "哈希/页数/提取状态已盘点；未全书视觉审阅",
+    "id": "R13",
+    "role": "参考书；非课堂覆盖对象",
+    "duplicateOf": "科学计算中偏微分方程有限差分方法(1).pdf"
+  },
+  {
+    "path": "笔记整理/原图/2026.10.19/0fa76151590a1cd9ef1eef29e937f0c9.jpg",
+    "bytes": 9638888,
+    "sha256": "95474446c1037fcd5f810e881e46c2af6241c2722bcdc2798ff59b382e5f5433",
+    "id": "C01",
+    "role": "新增课堂板书；文件夹日期非独立核实授课日期",
+    "review": "2026-10-20 视觉核对",
+    "duplicateOf": null
+  },
+  {
+    "path": "笔记整理/原图/2026.10.19/2a85b9d496c4b3f81b69646d7470ee6d.jpg",
+    "bytes": 9243184,
+    "sha256": "ac52a7816e16c7646d51a159ee05557b4127cd34212a330c16fdeb5e26d7af3d",
+    "id": "C02",
+    "role": "新增课堂板书；文件夹日期非独立核实授课日期",
+    "review": "2026-10-20 视觉核对",
+    "duplicateOf": null
+  },
+  {
+    "path": "笔记整理/原图/2026.10.19/34c81ae3430199290bfce54d07766b55.jpg",
+    "bytes": 6960910,
+    "sha256": "28ab597bea4e40766ccfdc8e7fc5662cf4aad4396dff432f1899ee1b91385984",
+    "id": "C03",
+    "role": "新增课堂板书；文件夹日期非独立核实授课日期",
+    "review": "2026-10-20 视觉核对",
+    "duplicateOf": null
+  },
+  {
+    "path": "笔记整理/原图/2026.10.19/4b53c0e70e0306fc13509c5a5247d02a.jpg",
+    "bytes": 8500871,
+    "sha256": "a956885bc2bf45323505ec2f32ac4ca7e92c120dd2a4609ff580b2f99238966c",
+    "id": "C04",
+    "role": "新增课堂板书；文件夹日期非独立核实授课日期",
+    "review": "2026-10-20 视觉核对",
+    "duplicateOf": null
+  },
+  {
+    "path": "笔记整理/原图/2026.10.19/6824e2e1e5cebd76d5f134a97ffc054a.jpg",
+    "bytes": 9690919,
+    "sha256": "067f00777790f4d9697943507aa3bd4b96845a38e2516ef009eb34098148714c",
+    "id": "C05",
+    "role": "新增课堂板书；文件夹日期非独立核实授课日期",
+    "review": "2026-10-20 视觉核对",
+    "duplicateOf": null
+  },
+  {
+    "path": "笔记整理/原图/2026.10.19/6cd5b70b12a4661220db15abbf058f3d.jpg",
+    "bytes": 7674815,
+    "sha256": "192dcbb49943e566dd02f256e72f88a18d5da6de41352ea3f7394f1defd9ebeb",
+    "id": "C06",
+    "role": "新增课堂板书；文件夹日期非独立核实授课日期",
+    "review": "2026-10-20 视觉核对",
+    "duplicateOf": null
+  },
+  {
+    "path": "笔记整理/原图/2026.10.19/8f94ca0e395fc639f8105d1fedf88d98.jpg",
+    "bytes": 9244692,
+    "sha256": "9c22b686097dfcb103f9ab5779a49168cfb2b05d2e489815c3a0eb73edbfc9ec",
+    "id": "C07",
+    "role": "新增课堂板书；文件夹日期非独立核实授课日期",
+    "review": "2026-10-20 视觉核对",
+    "duplicateOf": null
+  },
+  {
+    "path": "笔记整理/原图/2026.10.19/bbe5c279152ecf38f70772d1b127cbb1.jpg",
+    "bytes": 9331331,
+    "sha256": "08356071db5ff99c1ecb7507233f2b8470189a9e3ac953e35e3f35dffe2693e9",
+    "id": "C08",
+    "role": "新增课堂板书；文件夹日期非独立核实授课日期",
+    "review": "2026-10-20 视觉核对",
+    "duplicateOf": null
+  },
+  {
+    "path": "笔记整理/原图/2026.10.19/e46ae8b1dcd4ecbf6de08175c35cf314.jpg",
+    "bytes": 9001424,
+    "sha256": "b25c47b9ce3f5ee6d86c8e8f51552f00fd1f93be246f2f0f2eae0fde50221168",
+    "id": "C09",
+    "role": "新增课堂板书；文件夹日期非独立核实授课日期",
+    "review": "2026-10-20 视觉核对",
+    "duplicateOf": null
+  },
+  {
+    "path": "笔记整理/原图/笔记-01.jpg",
+    "bytes": 98441,
+    "sha256": "7ca16e93f7b42d3af64012f9498620bafca8ecac3d2f05320147c558d36d298a",
+    "id": "P01",
+    "role": "旧笔记页图，与 S01 前 12 页对应",
+    "review": "2026-10-20 视觉核对",
+    "duplicateOf": null
+  },
+  {
+    "path": "笔记整理/原图/笔记-02.jpg",
+    "bytes": 340731,
+    "sha256": "e66ec707724f9810ea48eb37ce32844ee8a80100dcc50da5821b74e78e4eddd5",
+    "id": "P02",
+    "role": "旧笔记页图，与 S01 前 12 页对应",
+    "review": "2026-10-20 视觉核对",
+    "duplicateOf": null
+  },
+  {
+    "path": "笔记整理/原图/笔记-03.jpg",
+    "bytes": 363712,
+    "sha256": "0add2f3dbc9bd27a511be02128757ecb15068aec89aa5e29f9cdbdef91661b18",
+    "id": "P03",
+    "role": "旧笔记页图，与 S01 前 12 页对应",
+    "review": "2026-10-20 视觉核对",
+    "duplicateOf": null
+  },
+  {
+    "path": "笔记整理/原图/笔记-04.jpg",
+    "bytes": 335462,
+    "sha256": "589c3dd8d8ffc6f6c875235f16663bc7373c207d99d8b25938349b36aa9c1d36",
+    "id": "P04",
+    "role": "旧笔记页图，与 S01 前 12 页对应",
+    "review": "2026-10-20 视觉核对",
+    "duplicateOf": null
+  },
+  {
+    "path": "笔记整理/原图/笔记-05.jpg",
+    "bytes": 313802,
+    "sha256": "11ff001933c7c4aa567d4d929e6426ef8d3e40b01875ab61196f6e5844ab5dcd",
+    "id": "P05",
+    "role": "旧笔记页图，与 S01 前 12 页对应",
+    "review": "2026-10-20 视觉核对",
+    "duplicateOf": null
+  },
+  {
+    "path": "笔记整理/原图/笔记-06.jpg",
+    "bytes": 310068,
+    "sha256": "7164d5b99b124fc9ce2cf55f4bb470d577b938a2944fa3e1df48ee32a7593a59",
+    "id": "P06",
+    "role": "旧笔记页图，与 S01 前 12 页对应",
+    "review": "2026-10-20 视觉核对",
+    "duplicateOf": null
+  },
+  {
+    "path": "笔记整理/原图/笔记-07.jpg",
+    "bytes": 303796,
+    "sha256": "a1e66ce169f3b726532382d8d90f3ff9b4ab1f236a1994c1aea295540d7637ed",
+    "id": "P07",
+    "role": "旧笔记页图，与 S01 前 12 页对应",
+    "review": "2026-10-20 视觉核对",
+    "duplicateOf": null
+  },
+  {
+    "path": "笔记整理/原图/笔记-08.jpg",
+    "bytes": 356620,
+    "sha256": "d1b799e960eb4de1c093083ff84efae60af396503c43f85407f725ed004506c6",
+    "id": "P08",
+    "role": "旧笔记页图，与 S01 前 12 页对应",
+    "review": "2026-10-20 视觉核对",
+    "duplicateOf": null
+  },
+  {
+    "path": "笔记整理/原图/笔记-09.jpg",
+    "bytes": 308771,
+    "sha256": "7323266ffc166b33b2fd674ffbf4913a371626ac32c2e05f04039014a57b6391",
+    "id": "P09",
+    "role": "旧笔记页图，与 S01 前 12 页对应",
+    "review": "2026-10-20 视觉核对",
+    "duplicateOf": null
+  },
+  {
+    "path": "笔记整理/原图/笔记-10.jpg",
+    "bytes": 314313,
+    "sha256": "fef1d314df9907e7de1fcd25881aed41f8a0da0089fff4750c45038c3912a546",
+    "id": "P10",
+    "role": "旧笔记页图，与 S01 前 12 页对应",
+    "review": "2026-10-20 视觉核对",
+    "duplicateOf": null
+  },
+  {
+    "path": "笔记整理/原图/笔记-11.jpg",
+    "bytes": 269077,
+    "sha256": "cb80f2b8cc626059b8c34d1662aeca8a4c1ea78006d2ed7ac8063c8a5b216845",
+    "id": "P11",
+    "role": "旧笔记页图，与 S01 前 12 页对应",
+    "review": "2026-10-20 视觉核对",
+    "duplicateOf": null
+  },
+  {
+    "path": "笔记整理/原图/笔记-12.jpg",
+    "bytes": 108991,
+    "sha256": "f294e07e48925b9e29a247ec1f2665aae9c601b4c3bcd8787f8eea4925c833fa",
+    "id": "P12",
+    "role": "旧笔记页图，与 S01 前 12 页对应",
+    "review": "2026-10-20 视觉核对",
+    "duplicateOf": null
+  }
+]
