@@ -32,4 +32,4 @@ pnpm dev
 
 ## 发布
 
-已提供 `.github/workflows/pages.yml`。当前目录初始不是 Git 仓库，没有配置远端或可用 GitHub 发布凭据，因此没有宣称上线。创建目标仓库并推送本项目源码，在仓库 Settings → Pages 中选 GitHub Actions。工作流会按仓库名设置 `BASE_PATH`，运行数学/内容检查后部署。原始书籍、高清课堂照片、依赖和生成目录均被忽略；需要本地原件的哈希验证由本地执行，CI 检查清单完整性。
+已提供 `.github/workflows/pages.yml` 并建立本地 Git 仓库。GitHub 连接已可用，但未找到当前账户下匹配本课程的仓库，本地也未配置发布目标，因此尚未上线。创建或指定目标仓库并推送源码，在仓库 Settings → Pages 中选 GitHub Actions。工作流按仓库名设置 `BASE_PATH`，运行数学/内容检查后部署。原始书籍、高清课堂照片、依赖和生成目录均被忽略；本地检查原件哈希，CI 检查清单完整性。
