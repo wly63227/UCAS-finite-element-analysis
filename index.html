@@ -1,0 +1,72 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light dark"><title>有限元分析：从守恒规律到离散方程 · 有限元分析教材</title><link rel="stylesheet" href="assets/katex/katex.min.css"><link rel="stylesheet" href="assets/style.css"></head><body><a class="skip" href="#content">跳到正文</a><header><a href="index.html" class="brand">FEA <span>有限元分析 · 学习笔记</span></a><button id="theme" aria-label="切换深浅色">深浅色</button></header><div class="layout"><aside class="sidebar"><label for="search">搜索全书</label><input id="search" type="search" placeholder="概念、公式或关键词" autocomplete="off"><div id="results" role="status" aria-live="polite"></div><nav aria-label="章节"><a aria-current="page" href="index.html" data-search="有限元分析：从守恒规律到离散方程">有限元分析：从守恒规律到离散方程</a><a  href="学习指南.html" data-search="学习指南与统一符号">学习指南与统一符号</a><a  href="学习大纲.html" data-search="学习大纲与知识依赖">学习大纲与知识依赖</a><a  href="01-数学准备与离散思想.html" data-search="数学准备与离散思想">数学准备与离散思想</a><a  href="02-一维稳态热传导的有限差分法.html" data-search="一维稳态热传导的有限差分法">一维稳态热传导的有限差分法</a><a  href="03-二维差分与线性方程组性质.html" data-search="二维差分与线性方程组性质">二维差分与线性方程组性质</a><a  href="04-有限元法入门-一维杆件与变分原理.html" data-search="有限元法入门：一维杆件例子与变分原理">有限元法入门：一维杆件例子与变分原理</a><a  href="05-一维有限元-单元分析与装配.html" data-search="一维有限元：单元分析、装配与求解">一维有限元：单元分析、装配与求解</a><a  href="06-一般二阶ODE与二维Poisson有限元.html" data-search="一般二阶 ODE 与二维 Poisson 方程的有限元方法">一般二阶 ODE 与二维 Poisson 方程的有限元方法</a><a  href="07-复习与预习.html" data-search="复习、预习与公式查找">复习、预习与公式查找</a><a  href="08-二维单元刚度矩阵与总体装配.html" data-search="二维单元刚度矩阵与总体装配">二维单元刚度矩阵与总体装配</a><a  href="09-三角形单元与面积坐标.html" data-search="三角形单元与面积坐标">三角形单元与面积坐标</a><a  href="10-材料界面与通量连续.html" data-search="材料界面：连续的温度与可能跳变的梯度">材料界面：连续的温度与可能跳变的梯度</a><a  href="建设报告.html" data-search="建设与验收报告">建设与验收报告</a><a  href="来源覆盖.html" data-search="课堂来源逐页覆盖">课堂来源逐页覆盖</a><a  href="练习与实验.html" data-search="例题、自测与可复现实验">例题、自测与可复现实验</a><a  href="知识点清单.html" data-search="当前资料知识点清单">当前资料知识点清单</a><a  href="资料清单.html" data-search="课程资料清单与版本">课程资料清单与版本</a><a  href="维护说明.html" data-search="维护与更新">维护与更新</a><a  href="勘误.html" data-search="本次核查的勘误与来源边界">本次核查的勘误与来源边界</a></nav><small>2026 课堂主讲 · 往年参考<br>教材初稿 / 2026-10-20</small></aside><main id="content"><div class="eyebrow">UCAS · FINITE ELEMENT ANALYSIS</div><article><h1 id="有限元分析从守恒规律到离散方程">有限元分析：从守恒规律到离散方程<a class="anchor" href="#有限元分析从守恒规律到离散方程" aria-label="本节链接">#</a></h1><p>这套笔记围绕一个问题展开：怎样把&quot;连续介质的守恒规律&quot;变成&quot;计算机能求解的代数方程&quot;？差分法直接在网格上逼近导数；有限元法先把方程写成弱形式，再用分片插值构造未知数，最后装配成总体刚度方程。两条路线在细网格极限下殊途同归。</p>
+<p>本版以 <strong>2026 年已提供的 15 页课堂 PDF 与 2026-10-19 的 9 张板书</strong>为主。参考书（数值分析、姜礼尚、科学计算中的偏微分方程等）仅作补充与查证，不替代尚未逐项核实的课堂范围。当前是可阅读的教材初稿，尚未完成全课件逐页视觉验收；具体边界见<a href="./%E5%BB%BA%E8%AE%BE%E6%8A%A5%E5%91%8A.html">建设与验收记录</a>。</p>
+<h2 id="开始学习">开始学习<a class="anchor" href="#开始学习" aria-label="本节链接">#</a></h2><p>先读<a href="./%E5%AD%A6%E4%B9%A0%E6%8C%87%E5%8D%97.html">学习指南与统一符号</a>，再依次阅读章节。每章的来源说明使用 PDF 物理页码，从 1 开始。标注&quot;编者解释&quot;的内容用于补足推导；标注&quot;自编&quot;的题目不是教师作业。推荐顺序是 <strong>01 → 02 → 03 → 04 → 05 → 06 → 08 → 09 → 10</strong>，07 用于复习查找。</p>
+<table>
+<thead>
+<tr>
+<th>章节</th>
+<th>要解决的问题</th>
+<th>资料版本</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><a href="./01-%E6%95%B0%E5%AD%A6%E5%87%86%E5%A4%87%E4%B8%8E%E7%A6%BB%E6%95%A3%E6%80%9D%E6%83%B3.html">01 数学准备与离散思想</a></td>
+<td>为什么离散化能逼近连续问题？误差与范数怎么衡量？</td>
+<td>2026 课堂</td>
+</tr>
+<tr>
+<td><a href="./02-%E4%B8%80%E7%BB%B4%E7%A8%B3%E6%80%81%E7%83%AD%E4%BC%A0%E5%AF%BC%E7%9A%84%E6%9C%89%E9%99%90%E5%B7%AE%E5%88%86%E6%B3%95.html">02 一维稳态热传导的有限差分法</a></td>
+<td>怎样用差商把微分方程变成线性方程组？</td>
+<td>2026 课堂</td>
+</tr>
+<tr>
+<td><a href="./03-%E4%BA%8C%E7%BB%B4%E5%B7%AE%E5%88%86%E4%B8%8E%E7%BA%BF%E6%80%A7%E6%96%B9%E7%A8%8B%E7%BB%84%E6%80%A7%E8%B4%A8.html">03 二维差分与线性方程组性质</a></td>
+<td>五点差分怎么来？系数矩阵为何可对称求解？</td>
+<td>2026 课堂</td>
+</tr>
+<tr>
+<td><a href="./04-%E6%9C%89%E9%99%90%E5%85%83%E6%B3%95%E5%85%A5%E9%97%A8-%E4%B8%80%E7%BB%B4%E6%9D%86%E4%BB%B6%E4%B8%8E%E5%8F%98%E5%88%86%E5%8E%9F%E7%90%86.html">04 有限元法入门：一维杆件与变分原理</a></td>
+<td>弱形式是什么？为什么比强形式更宽松？</td>
+<td>2026 课堂</td>
+</tr>
+<tr>
+<td><a href="./05-%E4%B8%80%E7%BB%B4%E6%9C%89%E9%99%90%E5%85%83-%E5%8D%95%E5%85%83%E5%88%86%E6%9E%90%E4%B8%8E%E8%A3%85%E9%85%8D.html">05 一维有限元：单元分析与装配</a></td>
+<td>形函数、单元刚度矩阵如何装配成总方程？</td>
+<td>2026 课堂</td>
+</tr>
+<tr>
+<td><a href="./06-%E4%B8%80%E8%88%AC%E4%BA%8C%E9%98%B6ODE%E4%B8%8E%E4%BA%8C%E7%BB%B4Poisson%E6%9C%89%E9%99%90%E5%85%83.html">06 一般二阶 ODE 与二维 Poisson 有限元</a></td>
+<td>一般算子与二维问题如何统一处理？</td>
+<td>2026 课堂</td>
+</tr>
+<tr>
+<td><a href="./07-%E5%A4%8D%E4%B9%A0%E4%B8%8E%E9%A2%84%E4%B9%A0.html">07 复习与预习</a></td>
+<td>前六章的主线、易错点与下一步？</td>
+<td>2026 课堂</td>
+</tr>
+<tr>
+<td><a href="./08-%E4%BA%8C%E7%BB%B4%E5%8D%95%E5%85%83%E5%88%9A%E5%BA%A6%E7%9F%A9%E9%98%B5%E4%B8%8E%E6%80%BB%E4%BD%93%E8%A3%85%E9%85%8D.html">08 二维单元刚度矩阵与总体装配</a></td>
+<td>二维矩形单元的刚度矩阵如何积分与装配？</td>
+<td>2026 课堂</td>
+</tr>
+<tr>
+<td><a href="./09-%E4%B8%89%E8%A7%92%E5%BD%A2%E5%8D%95%E5%85%83%E4%B8%8E%E9%9D%A2%E7%A7%AF%E5%9D%90%E6%A0%87.html">09 三角形单元与面积坐标</a></td>
+<td>任意三角形怎样用面积坐标插值？</td>
+<td>2026 课堂</td>
+</tr>
+<tr>
+<td><a href="./10-%E6%9D%90%E6%96%99%E7%95%8C%E9%9D%A2%E4%B8%8E%E9%80%9A%E9%87%8F%E8%BF%9E%E7%BB%AD.html">10 材料界面与通量连续</a></td>
+<td>不同材料交界时方程与通量如何衔接？</td>
+<td>2026 课堂</td>
+</tr>
+</tbody></table>
+<h2 id="检索与复习">检索与复习<a class="anchor" href="#检索与复习" aria-label="本节链接">#</a></h2><ul>
+<li><a href="./%E7%9F%A5%E8%AF%86%E7%82%B9%E6%B8%85%E5%8D%95.html">核心知识点索引</a>：按稳定编号定位正文。</li>
+<li><a href="./%E8%B5%84%E6%96%99%E6%B8%85%E5%8D%95.html">资料清单与版本说明</a>：文件、页数、哈希与使用范围。</li>
+<li><a href="./%E6%9D%A5%E6%BA%90%E8%A6%86%E7%9B%96.html">来源覆盖记录</a>：页段与正文的对应，以及待核对状态。</li>
+<li><a href="./%E7%BB%83%E4%B9%A0%E4%B8%8E%E5%AE%9E%E9%AA%8C.html">练习与可复现计算</a>：自编练习、课件计算复核与执行方法。</li>
+<li><a href="./%E5%BB%BA%E8%AE%BE%E6%8A%A5%E5%91%8A.html">建设与验收记录</a>：已做的检查及尚未通过的门禁。</li>
+<li><a href="./%E7%BB%B4%E6%8A%A4%E8%AF%B4%E6%98%8E.html">更新与维护</a>：内容更新流程与历史基线。</li>
+</ul>
+<p>原始 PDF 和参考书保留在课程文件夹，不随网站打包。本站正文是编者重写的讲解，不代表教师官方教材或标准答案；书中章节号沿用旧稿，仅作查找线索，未经逐项核实。</p>
+</article><footer><span></span><a href="学习指南.html">学习指南与统一符号 →</a></footer></main><aside class="toc"><strong>本页内容</strong><a href="#开始学习">开始学习</a><a href="#检索与复习">检索与复习</a><a href="#content">↑ 返回顶部</a></aside></div><script src="assets/search-data.js"></script><script src="assets/app.js" defer></script><noscript><p class="noscript">正文、公式和目录均可阅读；全文搜索与主题按钮需要 JavaScript。</p></noscript></body></html>
