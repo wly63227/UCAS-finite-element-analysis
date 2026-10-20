@@ -4,14 +4,13 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "vitepress dev 笔记整理 --host 127.0.0.1",
-    "build": "node scripts/version.mjs && vitepress build 笔记整理",
-    "preview": "vitepress preview 笔记整理 --host 127.0.0.1",
+    "build": "node scripts/build.mjs",
     "check": "node scripts/check.mjs",
+    "figures": "python scripts/experiments.py",
     "baseline": "node scripts/check.mjs --update-baseline"
   },
-  "devDependencies": {
-    "vitepress": "1.6.4",
-    "markdown-it-mathjax3": "4.3.2"
+  "dependencies": {
+    "katex": "^0.16.22",
+    "marked": "^15.0.12"
   }
 }

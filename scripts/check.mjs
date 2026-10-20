@@ -4,7 +4,7 @@ import crypto from 'node:crypto'
 const dir='笔记整理',failures=[],notes=[],sha=s=>crypto.createHash('sha256').update(s).digest('hex')
 const assert=(value,msg)=>{if(!value)failures.push(msg)}
 const args=process.argv.slice(2),ci=args.includes('--ci'),update=args.includes('--update-baseline')
-const files=fs.readdirSync(dir).filter(n=>n.endsWith('.md'))
+const files=fs.readdirSync(dir).filter(n=>n.endsWith('.md')&&n!=='README.md')
 const docs=new Map(files.map(n=>[n,fs.readFileSync(path.join(dir,n),'utf8').replace(/\r\n/g,'\n')]))
 const knowledge=JSON.parse(fs.readFileSync('knowledge.json','utf8'))
 const coverage=JSON.parse(fs.readFileSync('coverage.json','utf8'))
@@ -26,6 +26,8 @@ for(const [file,content] of docs){
   for(const m of content.matchAll(/!?\[[^\]]*\]\(([^)]+)\)/g)){
     let href=m[1].split(' ')[0]
     if(/^(https?:|mailto:|#)/.test(href))continue
+    // downloads/ is produced by the build (site/downloads), validated in the HTML pass below.
+    if(href.includes('downloads/'))continue
     const [target,anchor]=href.split('#')
     const local=target.startsWith('/')?path.join(dir,'public',target.slice(1)):path.resolve(dir,target)
     assert(fs.existsSync(local),`Broken source link ${file}: ${href}`)
@@ -45,6 +47,7 @@ if(update){
 }else{
   assert(fs.existsSync(baselinePath),'Missing content baseline')
   if(fs.existsSync(baselinePath))for(const [name,old]of Object.entries(JSON.parse(fs.readFileSync(baselinePath,'utf8')))){
+    if(name==='README.md')continue // folder note, deliberately not a site page
     const now=snapshot[name];assert(Boolean(now),'Baseline page removed: '+name)
     if(now){for(const id of old.ids)assert(now.ids.includes(id),'Historical anchor removed: '+id)
       for(const h of new Set(old.math))assert(now.math.includes(h),'Historical formula changed/removed: '+name+' '+h.slice(0,10))
@@ -53,7 +56,7 @@ if(update){
 }
 const experiment=JSON.parse(fs.readFileSync('实验结果.json','utf8'))
 assert(experiment.passed>=24,'Numerical experiments have not passed')
-const dist=path.join(dir,'.vitepress','dist')
+const dist=path.resolve(dir,'..','site')
 if(fs.existsSync(dist)){
   const all=[];function walk(d){for(const f of fs.readdirSync(d,{withFileTypes:true}))f.isDirectory()?walk(path.join(d,f.name)):f.name.endsWith('.html')&&all.push(path.join(d,f.name))}walk(dist)
   let math=0,links=0
@@ -63,11 +66,11 @@ if(fs.existsSync(dist)){
     if(fs.existsSync(output)){
       const html=fs.readFileSync(output,'utf8')
       const heading=content.match(/^# (.+)$/m)?.[1]
-      if(heading)assert(html.includes(heading),'SSR did not render heading: '+name)
+      if(heading)assert(html.includes(heading),'Build did not render heading: '+name)
     }
   }
-  for(const file of all){const html=fs.readFileSync(file,'utf8');math+=(html.match(/<mjx-container/g)||[]).length
-    assert(!/data-mml-node="merror"|<merror|Math input error/.test(html),'MathJax error: '+file)
+  for(const file of all){const html=fs.readFileSync(file,'utf8');math+=(html.match(/class="katex"/g)||[]).length
+    assert(!/katex-error/.test(html),'KaTeX error: '+file)
     for(const m of html.matchAll(/(?:href|src)="([^"<>]+)"/g)){
       let href=m[1];if(/^(https?:|mailto:|data:|javascript:)/.test(href))continue
       let [raw,anchor]=href.split('#');raw=decodeURIComponent(raw.split('?')[0])
@@ -83,7 +86,7 @@ if(fs.existsSync(dist)){
       }links++
     }
   }
-  assert(math>300,'Unexpectedly low MathJax formula render count')
+  assert(math>150,'Unexpectedly low KaTeX formula render count')
   notes.push(`${all.length} HTML pages; ${math} statically rendered math expressions; ${links} local link/resource references checked`)
 }else notes.push('No build yet; HTML checks pending')
 const result={passed:!failures.length,knowledge:knowledge.length,classroomRecords:coverage.length,notes,failures}

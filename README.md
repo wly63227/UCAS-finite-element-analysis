@@ -14,10 +14,9 @@ python -m pip install numpy
 python scripts/experiments.py
 pnpm check
 pnpm build
-pnpm dev
 ```
 
-开发地址默认 `http://127.0.0.1:5173/`，构建输出为 `笔记整理/.vitepress/dist/`。MathJax 在构建期生成 SVG，正文公式不依赖外网或浏览器运行 JS。搜索、主题切换和面积坐标交互需要 JS；正文、静态图和导航链接有静态页面。
+构建输出为 `site/` 静态站点。预览：`python -m http.server -d site 5173`，浏览器打开 `http://127.0.0.1:5173/`。KaTeX 在构建期渲染为 HTML + MathML，正文公式不依赖外网或浏览器运行 JS。全文搜索、深浅色切换需要 JS；正文、静态图、目录与导航链接均为静态页面，禁用 JS 也可阅读。
 
 ## 索引与维护
 
@@ -28,10 +27,12 @@ pnpm dev
 - `scripts/check.mjs`：链接、锚点、来源哈希、内容基线及构建公式检查。
 - `history/`：旧笔记归档与后续有理由的基线更新记录。
 
-更新流程见 [维护说明](维护说明.md)，长期规范见 [AGENTS.md](AGENTS.md)。
+更新流程见 [维护说明](笔记整理/维护说明.md)，长期规范见 [AGENTS.md](AGENTS.md)。
 
 ## 发布
 
 源码仓库：[https://github.com/wly63227/UCAS-finite-element-analysis](https://github.com/wly63227/UCAS-finite-element-analysis)（私有）。已配置本地 `origin`。原始书籍、高清课堂照片、依赖和生成目录均被忽略。
 
-工作流默认执行数学、内容和网站构建检查并保存构建产物。网页尚未部署；确认目标仓库支持 GitHub Pages 并在 Settings → Pages 中选择 GitHub Actions 后，将仓库变量 `ENABLE_PAGES` 设为 `true` 才启用部署。工作流会自动设置 `BASE_PATH`。私有仓库的 Pages 可用性取决于账户方案；启用 Pages 不等于改变仓库可见性。
+站点与同级 `UCAS-machine-learning` 仓库同构：侧栏导航、全文搜索、深浅色切换、章节页眉页脚与右侧目录由 `scripts/build.mjs` 统一生成；外观文件为 `scripts/style.css` 与 `scripts/app.js`。
+
+工作流在每次推送 `main` 时执行数值实验、内容与构建检查，并将 `site/` 部署到 GitHub Pages（Settings → Pages 选择 GitHub Actions 即可）。相对链接使站点在 `wly63227.github.io/UCAS-finite-element-analysis/` 子路径下无需额外 `BASE_PATH` 配置。私有仓库的 Pages 可用性取决于账户方案；启用 Pages 不等于改变仓库可见性。
