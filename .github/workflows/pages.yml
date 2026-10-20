@@ -37,10 +37,12 @@ jobs:
       - run: pnpm build
       - run: node scripts/check.mjs --ci
       - uses: actions/configure-pages@v5
+        if: vars.ENABLE_PAGES == 'true'
       - uses: actions/upload-pages-artifact@v3
         with:
           path: 笔记整理/.vitepress/dist
   deploy:
+    if: vars.ENABLE_PAGES == 'true'
     needs: build
     runs-on: ubuntu-latest
     environment:

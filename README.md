@@ -32,4 +32,6 @@ pnpm dev
 
 ## 发布
 
-已提供 `.github/workflows/pages.yml` 并建立本地 Git 仓库。GitHub 连接已可用，但未找到当前账户下匹配本课程的仓库，本地也未配置发布目标，因此尚未上线。创建或指定目标仓库并推送源码，在仓库 Settings → Pages 中选 GitHub Actions。工作流按仓库名设置 `BASE_PATH`，运行数学/内容检查后部署。原始书籍、高清课堂照片、依赖和生成目录均被忽略；本地检查原件哈希，CI 检查清单完整性。
+源码仓库：[https://github.com/wly63227/UCAS-finite-element-analysis](https://github.com/wly63227/UCAS-finite-element-analysis)（私有）。已配置本地 `origin`。原始书籍、高清课堂照片、依赖和生成目录均被忽略。
+
+工作流默认执行数学、内容和网站构建检查并保存构建产物。网页尚未部署；确认目标仓库支持 GitHub Pages 并在 Settings → Pages 中选择 GitHub Actions 后，将仓库变量 `ENABLE_PAGES` 设为 `true` 才启用部署。工作流会自动设置 `BASE_PATH`。私有仓库的 Pages 可用性取决于账户方案；启用 Pages 不等于改变仓库可见性。
