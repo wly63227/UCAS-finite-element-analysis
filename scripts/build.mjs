@@ -127,4 +127,12 @@ fs.copyFileSync(path.join(root, 'scripts', 'experiments.py'), path.join(out, 'do
 fs.writeFileSync(path.join(out, 'assets/search-data.js'), 'window.FEA_SEARCH=' + JSON.stringify(index) + ';');
 fs.writeFileSync(path.join(out, 'version.json'), JSON.stringify({commit: sourceCommit, builtAt: new Date().toISOString(), contentStatus: 'draft'}, null, 2));
 fs.writeFileSync(path.join(root, 'build-report.json'), JSON.stringify({pages: ordered.length, formulas: formulaCount, mathEngine: 'KaTeX local HTML + MathML', date: '2026-10-20'}, null, 2));
+
+// Mirror the built site into the path the deployed Actions workflow publishes.
+// The workflow file itself cannot be updated from this environment, so we emit
+// the same output twice instead (this directory is gitignored).
+const legacyOut = path.join(root, '笔记整理', '.vitepress', 'dist');
+fs.rmSync(legacyOut, {recursive: true, force: true});
+copyDir(out, legacyOut);
+
 console.log(`Built ${ordered.length} pages; rendered ${formulaCount} formulas locally.`);
