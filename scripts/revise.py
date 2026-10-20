@@ -2,6 +2,8 @@
 from pathlib import Path
 import re, zipfile
 root = Path(__file__).resolve().parent.parent
+if (root/'knowledge.json').exists():
+    raise SystemExit('Initial migration already complete. Edit canonical Markdown; do not replay archived notes.')
 notes = root/'笔记整理'
 archive = root/'history'/'notes-before-2026-10-20.zip'
 archive.parent.mkdir(exist_ok=True)

@@ -2,6 +2,7 @@
 import fs from 'node:fs'
 import path from 'node:path'
 const root=process.cwd(),dir=path.join(root,'笔记整理')
+if(fs.existsSync('knowledge.json'))throw new Error('Initial migration already complete. Maintain the stable index and source coverage explicitly.')
 const files=fs.readdirSync(dir).filter(n=>/^\d\d-.*\.md$/.test(n)).sort()
 const sourceByChapter={ '01':'S01 p.1','02':'S01 p.2','03':'S01 p.3','04':'S01 p.4–5','05':'S01 p.5–8','06':'S01 p.8–12','07':'学习辅助','08':'S01 p.13–15','09':'C01 C02 C03 C06 C07','10':'C08 C09' }
 const knowledge=[]
